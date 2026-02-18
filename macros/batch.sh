@@ -19,11 +19,11 @@ do
     # This takes the root file we just made and exports it to a PNG
     root -l -b -q "extract_images.C(\"charge_maps/charge_map_$i.root\",\"plots/charge_map_$i.png\")"
     
+    # Copy the text output from simulation (TextWriter module now saves directly)
+    cp /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/pixel_charges.txt hits_txt/hits_$i.txt
+    
     # Clean up simulation output
     rm -r /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/
-    
-    # Run the second macro to convert to text format
-    root -l -b -q "hist_data.C(\"charge_maps/charge_map_$i.root\",\"hits_txt/hits_$i.txt\")"
 
     echo "--- Iteration $i Finished ---"
     echo ""
