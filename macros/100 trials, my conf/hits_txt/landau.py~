@@ -1,0 +1,40 @@
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import moyal
+
+def fit_landau_to_results(filename="all_results.txt"):
+    amplitudes = []
+    
+    # Extract amplitudes from your summary file
+    with open(filename, "r") as f:
+        for line in f:
+            parts = line.split()
+            if len(parts) >= 4:
+                try:
+                    # Column 3 is Total_Amp
+                    amplitudes.append(float(parts[3]))
+                except ValueError:
+                    continue
+
+    if not amplitudes:
+        return
+
+    # A Moyal distribution is a good approximation of a Landau distribution
+    # Fit the data to find the MPV (loc) and scale
+    params = moyal.fit(amplitudes)
+    
+    # Generate the fit curve
+    x = np.linspace(min(amplitudes), max(amplitudes), 100)
+    pdf_fitted = moyal.pdf(x, *params)
+
+    # Plotting
+    plt.hist(amplitudes, bins=50, density=True, alpha=0.6, color='g', label='Data')
+    plt.plot(x, pdf_fitted, 'r-', lw=2, label=f'Landau/Moyal Fit\nMPV: {params[0]:.2f}')
+    plt.title("Energy Loss (dE/dx) Distribution")
+    plt.xlabel("Total Amplitude")
+    plt.ylabel("Probability Density")
+    plt.legend()
+    plt.show()
+
+# Example usage
+# fit_landau_to_results("all_results.txt")

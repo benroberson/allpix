@@ -1,0 +1,45 @@
+log_level = "STATUS"
+log_format = "DEFAULT"
+detectors_file = "project_detector.conf"
+number_of_events = 10
+
+#multithreading = true
+
+[GeometryBuilderGeant4]
+
+[DepositionGeant4]
+physics_list = FTFP_BERT_LIV
+particle_type = "proton"
+source_energy = 120GeV
+source_position = 0um 0um -10mm
+source_type = "beam"
+beam_size = 4mm
+beam_direction = 0 0 1
+number_of_particles = 1
+#record_all_tracks = true
+max_step_length = 1um
+
+
+
+[ElectricFieldReader]
+model = "linear"
+bias_voltage = -151V
+depletion_voltage = -150V
+
+
+[ProjectionPropagation]
+temperature = 293K
+output_plots = 1
+
+
+[SimpleTransfer]
+max_depth_distance = 5um
+output_plots = 1
+
+[DefaultDigitizer]
+threshold = 2500e
+output_plots = 1
+
+[DetectorHistogrammer]
+name = "project_detector"
+

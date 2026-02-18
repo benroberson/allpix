@@ -1,0 +1,181 @@
+|18:58:54.629|  (STATUS) Welcome to Allpix^2 v3.2.0
+|18:58:54.629|  (STATUS) Initialized PRNG with system entropy seed 818379056695016172
+|18:58:55.990|  (STATUS) Loading module GeometryBuilderGeant4
+|18:58:55.990|    (INFO) [C:GeometryBuilderGeant4] Detected Geant4 multithreading capabilities, enabling multithreading support
+|18:58:55.990|  (STATUS) Loading module DepositionGeant4
+|18:58:55.991|  (STATUS) Loading module ElectricFieldReader
+|18:58:56.000|  (STATUS) Loading module ProjectionPropagation
+|18:58:56.000|  (STATUS) Loading module SimpleTransfer        
+|18:58:56.000|  (STATUS) Loading module DefaultDigitizer
+|18:58:56.017|  (STATUS) Loading module DetectorHistogrammer
+|18:58:56.017|  (STATUS) Loaded 7 modules                    
+|18:58:56.017|  (STATUS) Multithreading enabled, processing events in parallel on 15 worker threads
+|18:58:56.017|  (STATUS) Allocating a total of 3840 event slots for buffered modules
+|18:58:56.017|  (STATUS) Initializing 7 module instantiations
+|18:58:56.109|    (INFO) [I:GeometryBuilderGeant4] No overlapping volumes detected.
+|18:58:56.112|    (INFO) [I:DepositionGeant4] Using G4 physics list "FTFP_BERT_LIV"
+|18:58:56.112|    (INFO) [I:DepositionGeant4] Setting G4 production cut to 11um, derived from properties of detector "project_detector"
+|18:58:56.112|    (INFO) [I:DepositionGeant4] Setting minimum kinetic energy for tracks to 3.64eV, derived from material of detector "project_detector"
+|18:58:59.660|    (INFO) [I:ElectricFieldReader:project_detector] Setting linear electric field from -151V bias voltage and -150V depletion voltage
+|18:58:59.661|    (INFO) [I:ProjectionPropagation:project_detector] No charge carrier recombination model chosen, finite lifetime not simulated
+|18:58:59.661|    (INFO) [I:ProjectionPropagation:project_detector] Selected recombination model "none"
+|18:58:59.718|  (STATUS) Initialized 7 module instantiations
+|18:58:59.728|  (STATUS) Starting event loop
+|18:58:59.741|    (INFO) Starting event 1 with seed 9336924663801825899
+|18:58:59.747|    (INFO) Starting event 2 with seed 15605864579983710425
+|18:58:59.752|    (INFO) Starting event 3 with seed 7806440611752654855
+|18:58:59.757|    (INFO) Starting event 4 with seed 12969155427969236302
+|18:58:59.762|    (INFO) Starting event 5 with seed 16732861780007602505
+|18:58:59.767|    (INFO) Starting event 6 with seed 10482677389520623488
+|18:58:59.775|    (INFO) Starting event 7 with seed 13145396417356475452
+|18:58:59.780|    (INFO) Starting event 8 with seed 14685048349742968746
+|18:58:59.789|    (INFO) Starting event 9 with seed 13339889227723879939
+|18:58:59.794|    (INFO) Starting event 10 with seed 7372061584891376363
+|18:58:59.800|    (INFO) Starting event 11 with seed 15652605611360467421
+|18:58:59.804|    (INFO) (Event 1) [R:DepositionGeant4] Deposited 46350 charges in sensor of detector project_detector
+|18:58:59.808|    (INFO) Starting event 12 with seed 12028414452214988826
+|18:58:59.811|    (INFO) (Event 1) [R:ProjectionPropagation:project_detector] Total charge: 23175 (lost: 0, 0%)
+|18:58:59.811|    (INFO) (Event 1) [R:SimpleTransfer:project_detector] Transferred 23175 charges to 3 pixels
+|18:58:59.811|    (INFO) (Event 1) [R:DefaultDigitizer:project_detector] [further messages suppressed] Simulation chain does not allow for time-of-arrival calculation
+|18:58:59.811|    (INFO) (Event 1) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.813|    (INFO) (Event 2) [R:DepositionGeant4] Deposited 52052 charges in sensor of detector project_detector
+|18:58:59.815|    (INFO) Starting event 13 with seed 14555072203359806285
+|18:58:59.816|    (INFO) (Event 3) [R:DepositionGeant4] Deposited 40236 charges in sensor of detector project_detector
+|18:58:59.816|    (INFO) (Event 2) [R:ProjectionPropagation:project_detector] Total charge: 26026 (lost: 0, 0%)
+|18:58:59.817|    (INFO) (Event 2) [R:SimpleTransfer:project_detector] Transferred 26026 charges to 4 pixels
+|18:58:59.817|    (INFO) (Event 5) [R:DepositionGeant4] Deposited 74708 charges in sensor of detector project_detector
+|18:58:59.817|    (INFO) (Event 2) [R:DefaultDigitizer:project_detector] Digitized 2 pixel hits
+|18:58:59.819|    (INFO) (Event 3) [R:ProjectionPropagation:project_detector] Total charge: 20118 (lost: 0, 0%)
+|18:58:59.820|    (INFO) (Event 3) [R:SimpleTransfer:project_detector] Transferred 20118 charges to 3 pixels
+|18:58:59.820|    (INFO) (Event 3) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.822|    (INFO) (Event 5) [R:ProjectionPropagation:project_detector] Total charge: 37354 (lost: 0, 0%)
+|18:58:59.823|    (INFO) (Event 5) [R:SimpleTransfer:project_detector] Transferred 37354 charges to 2 pixels
+|18:58:59.824|    (INFO) (Event 6) [R:DepositionGeant4] Deposited 53144 charges in sensor of detector project_detector
+|18:58:59.824|    (INFO) Starting event 14 with seed 2052411513616450728
+|18:58:59.830|    (INFO) Starting event 15 with seed 10387586603259594092
+|18:58:59.830|    (INFO) (Event 5) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.832|    (INFO) (Event 6) [R:ProjectionPropagation:project_detector] Total charge: 26572 (lost: 0, 0%)
+|18:58:59.833|    (INFO) (Event 6) [R:SimpleTransfer:project_detector] Transferred 26572 charges to 2 pixels
+|18:58:59.833|    (INFO) (Event 6) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.833|    (INFO) (Event 4) [R:DepositionGeant4] Deposited 66234 charges in sensor of detector project_detector
+|18:58:59.837|    (INFO) (Event 4) [R:ProjectionPropagation:project_detector] Total charge: 33117 (lost: 0, 0%)
+|18:58:59.837|    (INFO) (Event 4) [R:SimpleTransfer:project_detector] Transferred 33117 charges to 4 pixels
+|18:58:59.837|    (INFO) (Event 4) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.851|    (INFO) (Event 8) [R:DepositionGeant4] Deposited 44356 charges in sensor of detector project_detector
+|18:58:59.853|    (INFO) (Event 11) [R:DepositionGeant4] Deposited 53560 charges in sensor of detector project_detector
+|18:58:59.853|    (INFO) (Event 8) [R:ProjectionPropagation:project_detector] Total charge: 22178 (lost: 0, 0%)
+|18:58:59.854|    (INFO) (Event 8) [R:SimpleTransfer:project_detector] Transferred 22178 charges to 2 pixels
+|18:58:59.854|    (INFO) (Event 8) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.856|    (INFO) (Event 11) [R:ProjectionPropagation:project_detector] Total charge: 26780 (lost: 0, 0%)
+|18:58:59.856|    (INFO) (Event 11) [R:SimpleTransfer:project_detector] Transferred 26780 charges to 2 pixels
+|18:58:59.856|    (INFO) (Event 11) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.859|    (INFO) Finished event 1 with seed 9336924663801825899
+|18:58:59.859|  (STATUS) Buffered 0, finished 1 of 20 events
+|18:58:59.859|    (INFO) Starting event 16 with seed 3062517565679959208
+|18:58:59.860|    (INFO) (Event 7) [R:DepositionGeant4] Deposited 46840 charges in sensor of detector project_detector
+|18:58:59.860|    (INFO) (Event 16) [R:DepositionGeant4] Deposited 39438 charges in sensor of detector project_detector
+|18:58:59.861|    (INFO) (Event 9) [R:DepositionGeant4] Deposited 80174 charges in sensor of detector project_detector
+|18:58:59.861|    (INFO) (Event 12) [R:DepositionGeant4] Deposited 81138 charges in sensor of detector project_detector
+|18:58:59.863|    (INFO) (Event 16) [R:ProjectionPropagation:project_detector] Total charge: 19719 (lost: 0, 0%)
+|18:58:59.863|    (INFO) (Event 16) [R:SimpleTransfer:project_detector] Transferred 19719 charges to 2 pixels
+|18:58:59.863|    (INFO) (Event 16) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.864|    (INFO) Finished event 16 with seed 3062517565679959208
+|18:58:59.864|  (STATUS) Buffered 0, finished 2 of 20 events
+|18:58:59.864|    (INFO) Starting event 17 with seed 7587725052188140063
+|18:58:59.865|    (INFO) (Event 7) [R:ProjectionPropagation:project_detector] Total charge: 23420 (lost: 0, 0%)
+|18:58:59.865|    (INFO) (Event 17) [R:DepositionGeant4] Deposited 55274 charges in sensor of detector project_detector
+|18:58:59.865|    (INFO) (Event 7) [R:SimpleTransfer:project_detector] Transferred 23420 charges to 3 pixels
+|18:58:59.865|    (INFO) (Event 7) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.867|    (INFO) (Event 12) [R:ProjectionPropagation:project_detector] Total charge: 40569 (lost: 0, 0%)
+|18:58:59.867|    (INFO) (Event 17) [R:ProjectionPropagation:project_detector] Total charge: 27637 (lost: 0, 0%)
+|18:58:59.867|    (INFO) (Event 9) [R:ProjectionPropagation:project_detector] Total charge: 40087 (lost: 0, 0%)
+|18:58:59.867|    (INFO) (Event 17) [R:SimpleTransfer:project_detector] Transferred 27637 charges to 2 pixels
+|18:58:59.867|    (INFO) (Event 9) [R:SimpleTransfer:project_detector] Transferred 40087 charges to 4 pixels
+|18:58:59.867|    (INFO) (Event 12) [R:SimpleTransfer:project_detector] Transferred 40569 charges to 2 pixels
+|18:58:59.867|    (INFO) (Event 17) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.868|    (INFO) Finished event 17 with seed 7587725052188140063
+|18:58:59.868|  (STATUS) Buffered 0, finished 3 of 20 events
+|18:58:59.868|    (INFO) Starting event 18 with seed 7809139167414818045
+|18:58:59.868|    (INFO) (Event 12) [R:DefaultDigitizer:project_detector] Digitized 2 pixel hits
+|18:58:59.868|    (INFO) (Event 9) [R:DefaultDigitizer:project_detector] Digitized 2 pixel hits
+|18:58:59.869|    (INFO) Finished event 3 with seed 7806440611752654855
+|18:58:59.869|  (STATUS) Buffered 0, finished 4 of 20 events
+|18:58:59.869|    (INFO) (Event 18) [R:DepositionGeant4] Deposited 59308 charges in sensor of detector project_detector
+|18:58:59.869|    (INFO) Starting event 19 with seed 13999705783830595897
+|18:58:59.870|    (INFO) (Event 19) [R:DepositionGeant4] Deposited 63368 charges in sensor of detector project_detector
+|18:58:59.870|    (INFO) (Event 13) [R:DepositionGeant4] Deposited 165532 charges in sensor of detector project_detector
+|18:58:59.871|    (INFO) (Event 18) [R:ProjectionPropagation:project_detector] Total charge: 29654 (lost: 0, 0%)
+|18:58:59.871|    (INFO) (Event 18) [R:SimpleTransfer:project_detector] Transferred 28934 charges to 5 pixels
+|18:58:59.871|    (INFO) (Event 18) [R:DefaultDigitizer:project_detector] Digitized 3 pixel hits
+|18:58:59.871|    (INFO) Finished event 18 with seed 7809139167414818045
+|18:58:59.871|  (STATUS) Buffered 0, finished 5 of 20 events
+|18:58:59.872|    (INFO) Starting event 20 with seed 16351985902853334361
+|18:58:59.872|    (INFO) Finished event 2 with seed 15605864579983710425
+|18:58:59.872|  (STATUS) Buffered 0, finished 6 of 20 events
+|18:58:59.872|    (INFO) Finished event 6 with seed 10482677389520623488
+|18:58:59.872|  (STATUS) Buffered 0, finished 7 of 20 events
+|18:58:59.872|    (INFO) (Event 20) [R:DepositionGeant4] Deposited 60706 charges in sensor of detector project_detector
+|18:58:59.873|    (INFO) (Event 19) [R:ProjectionPropagation:project_detector] Total charge: 31684 (lost: 0, 0%)
+|18:58:59.874|    (INFO) (Event 19) [R:SimpleTransfer:project_detector] Transferred 31684 charges to 4 pixels
+|18:58:59.874|    (INFO) (Event 19) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.874|    (INFO) Finished event 19 with seed 13999705783830595897
+|18:58:59.874|  (STATUS) Buffered 0, finished 8 of 20 events
+|18:58:59.875|    (INFO) (Event 20) [R:ProjectionPropagation:project_detector] Total charge: 30353 (lost: 0, 0%)
+|18:58:59.875|    (INFO) (Event 20) [R:SimpleTransfer:project_detector] Transferred 30353 charges to 3 pixels
+|18:58:59.875|    (INFO) (Event 20) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.876|    (INFO) Finished event 20 with seed 16351985902853334361
+|18:58:59.876|  (STATUS) Buffered 0, finished 9 of 20 events
+|18:58:59.877|    (INFO) Finished event 5 with seed 16732861780007602505
+|18:58:59.877|  (STATUS) Buffered 0, finished 10 of 20 events
+|18:58:59.877|    (INFO) (Event 10) [R:DepositionGeant4] Deposited 46974 charges in sensor of detector project_detector
+|18:58:59.878|    (INFO) Finished event 4 with seed 12969155427969236302
+|18:58:59.878|  (STATUS) Buffered 0, finished 11 of 20 events
+|18:58:59.878|    (INFO) (Event 15) [R:DepositionGeant4] Deposited 46120 charges in sensor of detector project_detector
+|18:58:59.881|    (INFO) (Event 13) [R:ProjectionPropagation:project_detector] Total charge: 82766 (lost: 0, 0%)
+|18:58:59.881|    (INFO) (Event 15) [R:ProjectionPropagation:project_detector] Total charge: 23060 (lost: 0, 0%)
+|18:58:59.881|    (INFO) (Event 15) [R:SimpleTransfer:project_detector] Transferred 23060 charges to 4 pixels
+|18:58:59.882|    (INFO) (Event 15) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.882|    (INFO) (Event 10) [R:ProjectionPropagation:project_detector] Total charge: 23487 (lost: 0, 0%)
+|18:58:59.882|    (INFO) (Event 13) [R:SimpleTransfer:project_detector] Transferred 82766 charges to 8 pixels
+|18:58:59.882|    (INFO) (Event 10) [R:SimpleTransfer:project_detector] Transferred 23487 charges to 1 pixels
+|18:58:59.883|    (INFO) (Event 10) [R:DefaultDigitizer:project_detector] Digitized 1 pixel hits
+|18:58:59.883|    (INFO) (Event 13) [R:DefaultDigitizer:project_detector] Digitized 5 pixel hits
+|18:58:59.892|    (INFO) Finished event 8 with seed 14685048349742968746
+|18:58:59.892|  (STATUS) Buffered 0, finished 12 of 20 events
+|18:58:59.897|    (INFO) Finished event 11 with seed 15652605611360467421
+|18:58:59.897|  (STATUS) Buffered 0, finished 13 of 20 events
+|18:58:59.899|    (INFO) (Event 14) [R:DepositionGeant4] Deposited 233954 charges in sensor of detector project_detector
+|18:58:59.905|    (INFO) Finished event 9 with seed 13339889227723879939
+|18:58:59.905|  (STATUS) Buffered 0, finished 14 of 20 events
+|18:58:59.905|    (INFO) Finished event 12 with seed 12028414452214988826
+|18:58:59.905|  (STATUS) Buffered 0, finished 15 of 20 events
+|18:58:59.915|    (INFO) (Event 14) [R:ProjectionPropagation:project_detector] Total charge: 116977 (lost: 0, 0%)
+|18:58:59.916|    (INFO) Finished event 7 with seed 13145396417356475452
+|18:58:59.916|  (STATUS) Buffered 0, finished 16 of 20 events
+|18:58:59.917|    (INFO) (Event 14) [R:SimpleTransfer:project_detector] Transferred 116977 charges to 8 pixels
+|18:58:59.917|    (INFO) (Event 14) [R:DefaultDigitizer:project_detector] Digitized 6 pixel hits
+|18:58:59.920|    (INFO) Finished event 15 with seed 10387586603259594092
+|18:58:59.920|  (STATUS) Buffered 0, finished 17 of 20 events
+|18:58:59.925|    (INFO) Finished event 10 with seed 7372061584891376363
+|18:58:59.926|  (STATUS) Buffered 0, finished 18 of 20 events
+|18:58:59.928|    (INFO) Finished event 13 with seed 14555072203359806285
+|18:58:59.928|  (STATUS) Buffered 0, finished 19 of 20 events
+|18:58:59.951|    (INFO) Finished event 14 with seed 2052411513616450728
+|18:58:59.951|  (STATUS) Buffered 0, finished 20 of 20 events
+|18:58:59.951|  (STATUS) Finished run of 20 events           
+|18:58:59.954|    (INFO) [F:DepositionGeant4] Deposited total of 1409466 charges in 1 sensor(s) (average of 100676 per sensor for every event)
+|18:58:59.971|    (INFO) [F:ProjectionPropagation:project_detector] 0% of deposits have charge exceeding the 1000 charge groups allowed, with a charge_per_step value of 10.
+|18:58:59.971|    (INFO) [F:SimpleTransfer:project_detector] Transferred total of 704013 charges
+|18:58:59.972|    (INFO) [F:DefaultDigitizer:project_detector] Digitized 34 pixel hits in total
+|18:58:59.972|    (INFO) [F:DetectorHistogrammer:project_detector] Plotted 34 hits in total
+|18:59:00.364|  (STATUS) Finalization completed
+|18:59:00.365|  (STATUS) Executed 7 instantiations in 4 seconds, spending 77% of time in slowest instantiation DepositionGeant4
+|18:59:00.365|    (INFO)  Module GeometryBuilderGeant4 took 90.2992ms
+|18:59:00.365|    (INFO)  Module DepositionGeant4 took 4.53125s
+|18:59:00.365|    (INFO)  Module ElectricFieldReader:project_detector took 0.649901ms
+|18:59:00.365|    (INFO)  Module ProjectionPropagation:project_detector took 117.325ms
+|18:59:00.365|    (INFO)  Module SimpleTransfer:project_detector took 12.2216ms
+|18:59:00.365|    (INFO)  Module DefaultDigitizer:project_detector took 28.846ms
+|18:59:00.365|    (INFO)  Module DetectorHistogrammer:project_detector took 1.06884s
+|18:59:00.365|  (STATUS) Average processing time is 11.1622ms/event, event generation at 90 Hz
+|18:59:00.365|  (STATUS) This corresponds to a processing time of 167.432ms/event per worker

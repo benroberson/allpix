@@ -1,0 +1,1 @@
+source /cvmfs/clicdp.cern.ch/software/allpix-squared/3.2.0/x86_64-el9-gcc12-opt/setup.sh

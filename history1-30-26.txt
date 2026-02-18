@@ -1,0 +1,72 @@
+    1  ls
+    2  ls pix
+    3  ls pixelsim/
+    4  ls pixelsim/cmsp1/
+    5  ls pixelsim/cmsp1/amanda/
+    6  ls pixelsim/cmsp1/amanda/allpix-squared/
+    7  ls pixelsim/cmsp1/amanda/allpix-squared/neuropix/
+    8  cd pixelsim/cmsp1/
+    9  ls
+   10  ls macros/
+   11  cat macros/batch.sh 
+   12  source /cvmfs/clicdp.cern.ch/software/allpix-squared/3.2.0/x86_64-el9-gcc12-opt/setup.sh
+   13  cat macros/batch.sh 
+   14  allpix -c /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/Timepix4/main.conf
+   15  ls
+   16  cd amanda/allpix-squared/neuropix/
+   17  ls
+   18  allpix -c timepix4.conf 
+   19  allpix -c neuro.conf 
+   20  ls
+   21  ls output/
+   22  ls
+   23  cd ~/pixelsim/cmsp1/macros/
+   24  ls
+   25  bash batch.sh 
+   26  kill 1
+   27  kill $1
+   28  kill -n 1
+   29  kill %1
+   30  ls
+   31  bash batch.sh 
+   32  ls
+   33  ls charge_maps/
+   34  ls hits_txt/
+   35  ls
+   36  cd ../amanda/allpix-squared/neuropix/
+   37  ls
+   38  mv output/ output-old
+   39  ls
+   40  allpix
+   41  allpix -c neuro.conf 
+   42  ls
+   43  ls output
+   44  pwd
+   45  ls
+   46  pwd
+   47  mv output/modules.root ~/pixelsim/cmsp1/cernbox/
+   48  ls
+   49  ls ~/pixelsim/cmsp1/cernbox/
+   50  cd ~/pixelsim/cmsp1/macros/
+   51  ls
+   52  ls ..
+   53  allpix -c neuro.conf 
+   54  ls
+   55  cd ..
+   56  ls
+   57  mv output/modules.root cernbox/
+   58  ls 
+   59  cd macros/
+   60  cd ~
+   61  grep -rn -e 'cmsp1'
+   62  ls
+   63  cd pixelsim/cmsp1/
+   64  ls
+   65  grep -rn 'macros' -e 'cmsp1'
+   66  grep -rn 'firstTrial/' -e 'cmsp1'
+   67  ls
+   68  cd macros/
+   69  allpix -c neuro.conf 
+   70  ls
+   71  allpix -c neuro.conf 
+   72  history > ../history1-30-26.txt

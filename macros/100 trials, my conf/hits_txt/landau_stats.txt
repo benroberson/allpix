@@ -1,0 +1,7 @@
+LANDAU (MOYAL) FIT RESULTS
+==============================
+Source File:           all_results.txt
+Number of Clusters:    1016
+Most Probable Value (MPV): 26.6259
+Width (Sigma):         21.0734
+==============================

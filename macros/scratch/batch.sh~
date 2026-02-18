@@ -1,0 +1,32 @@
+#!/bin/bash
+#Note: must run within macros folder!
+#Output is in macros folder
+#Check that your config File saves the modules.root to /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/modules.root !
+
+# Check if the user provided at least one argument
+#if [ $# -eq 0 ]; then
+ #   echo "Usage: $0 <allpix conf file> <allpix output path>"
+ #  exit 1
+  #  fi
+mkdir -p charge_maps
+mkdir -p hits_txt
+
+# Loop from 1 to 10
+for i in {1..10}
+do
+    echo "--- Starting Iteration: $i ---"
+    allpix -c /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/Timepix4/main.conf
+#    allpix -c $1
+    
+    # Run the first macro
+    # Syntax: 'macro.C(arg1, arg2)'
+
+
+    root -l -b -q "save_histogram.C(\"/afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/modules.root\",\"charge_maps/charge_map_$i.root\")"
+
+    # Run the second macro
+    root -l -b -q "hist_data.C(\"charge_maps/charge_map_$i.root\",\"hits_txt/hits_$i.txt\")"
+
+    echo "--- Iteration $i Finished ---"
+    echo ""
+    done

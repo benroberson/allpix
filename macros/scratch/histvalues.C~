@@ -1,0 +1,15 @@
+// Assuming h2 is your TH2* histogram
+ofstream myfile;
+myfile.open("histogram_data.txt");
+
+for (int i = 1; i <= h2->GetNbinsX(); ++i) {
+  for (int j = 1; j <= h2->GetNbinsY(); ++j) {
+    double x = h2->GetXaxis()->GetBinCenter(i);
+    double y = h2->GetYaxis()->GetBinCenter(j);
+    double content = h2->GetBinContent(i, j);
+
+    // Save X, Y, and Content (Z)
+    myfile << x << " " << y << " " << content << endl;
+  }
+ }
+myfile.close();
