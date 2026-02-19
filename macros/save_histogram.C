@@ -21,7 +21,7 @@ void save_histogram(const char* inputPath, const char* outputPath ){
     TH2D* n2 = new TH2D("name","title", 100, 0, 100,0,100);
     gDirectory->GetObject("charge_map;1", n2);
     // results->ls();
-    #n2->Write();
+    //n2->Write();
     TFile *outFile = TFile::Open(outputPath, "RECREATE");
     if (!outFile || outFile->IsZombie()) {
       std::cerr << "Error: Could not open output file for writing." << std::endl;

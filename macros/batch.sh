@@ -4,10 +4,11 @@ source /cvmfs/clicdp.cern.ch/software/allpix-squared/3.2.0/x86_64-el9-gcc12-opt/
 
 mkdir -p charge_maps
 mkdir -p hits_txt
-mkdir -p plots          # New directory for PNG exports
+mkdir -p hits_txt_long
+mkdir -p plots          
 
 # Loop from 1 to 10
-for i in {1..100}
+for i in {1..3}
 do
     echo "--- Starting Iteration: $i ---"
     allpix -c neuro.conf
@@ -20,8 +21,11 @@ do
     root -l -b -q "extract_images.C(\"charge_maps/charge_map_$i.root\",\"plots/charge_map_$i.png\")"
     
     # Copy the text output from simulation (TextWriter module now saves directly)
-    cp /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/pixel_charges.txt hits_txt/hits_$i.txt
-    
+    cp /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/pixel_charges.txt hits_txt_long/hits_$i.txt
+
+    # Run the second macro to convert to text format
+    root -l -b -q "hist_data.C(\"charge_maps/charge_map_$i.root\",\"hits_txt/hits_$i.txt\")"
+
     # Clean up simulation output
     rm -r /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/
 
