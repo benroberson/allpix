@@ -8,7 +8,7 @@ mkdir -p hits_txt_long
 mkdir -p plots          
 
 # Loop from 1 to 10
-for i in {1..3}
+for i in {1..2}
 do
     echo "--- Starting Iteration: $i ---"
     allpix -c neuro.conf
