@@ -8,8 +8,11 @@ mkdir -p hits_txt_long
 mkdir -p plots          
 
 # Loop from 1 to 10
-for i in {1..2}
+for i in {1..1}
 do
+    # Clean up simulation output
+    rm -rf /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/
+
     echo "--- Starting Iteration: $i ---"
     allpix -c neuro.conf
     
@@ -25,9 +28,6 @@ do
 
     # Run the second macro to convert to text format
     root -l -b -q "hist_data.C(\"charge_maps/charge_map_$i.root\",\"hits_txt/hits_$i.txt\")"
-
-    # Clean up simulation output
-    rm -r /afs/cern.ch/user/b/broberso/pixelsim/cmsp1/output/
 
     echo "--- Iteration $i Finished ---"
     echo ""
